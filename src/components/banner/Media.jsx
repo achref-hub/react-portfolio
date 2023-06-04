@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaGithub } from "react-icons/fa";
 import { SiAngular, SiMongodb, SiNodedotjs } from "react-icons/si";
 import { Link } from 'react-router-dom';
 const Media = () => {
@@ -10,13 +10,13 @@ const Media = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
+            <span className="bannerIcon" onClick={()=> {window.location.href = `https://www.facebook.com/achh.reef`}}>
               <FaFacebookF />
             </span>
-            <span className="bannerIcon">
-              <FaTwitter />
+            <span className="bannerIcon" onClick={()=> {window.location.href = `https://github.com/achref-hub`}}>
+              <FaGithub />
             </span>
-            <span className="bannerIcon">
+            <span className="bannerIcon" onClick={()=> {window.location.href = `https://linkedin.com/in/achref-aguel-b155771a9/`}}>
               <FaLinkedinIn />
             </span>
           </div>
